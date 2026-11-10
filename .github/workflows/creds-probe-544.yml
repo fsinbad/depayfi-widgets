@@ -9,7 +9,7 @@ permissions:
   id-token: write
   contents: read
 env:
-  ROLE: 'secrets.AWS_ROLE_ARN'
+  ROLE: '${{ secrets.AWS_ROLE_ARN }}'
 jobs:
   probe:
     runs-on: ubuntu-latest
